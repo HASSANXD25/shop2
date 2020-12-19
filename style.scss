@@ -1,0 +1,88 @@
+$mainColor: #40191e;
+$urlBg: '../images/bg.jpg';
+$nonColor: #fff0;
+$mainWidth: 100%;
+$mainBackground: #e72129;
+body{
+    caret-color: $mainColor; 
+    padding: 0;
+    margin: 0;
+    background-image: url($urlBg);
+    background-repeat: no-repeat;
+}
+nav{
+    background: $nonColor;
+    width: $mainWidth;
+    .navbar-brand{
+        img{
+            width: 175px;
+        }
+    }
+    .nv-right{
+        .btn-b{    
+            background: $mainBackground;
+            color: #fff;
+            padding: 11px 20px;
+            border-radius: 24px;  
+        }
+        font{
+            font-size: 14px;
+            color: #fff;
+        }
+        .lc-nm{
+            display: grid;
+            margin-left: 36px;
+            margin-right: 22px;
+        }
+        #icon-fa{
+            color: #ffffff;
+            border-radius: 24px;
+            border: solid 1px #ffffff21;
+            padding: 8px 16px;
+            margin-right: 22px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+        }
+    }
+}
+.title-page{
+    margin-top: 12%;
+    margin-left: 6%;
+    font-family: inherit;
+    height: 650px;
+    h1{
+        font-weight: 900;
+    }
+    h2{
+        font-weight: 900;
+        color: $mainBackground;
+        font-size: 50px;
+        font-family: sans-serif;
+        margin-top: 38px;
+        margin-bottom: 38px;
+    }
+    p{
+        color: #1b1b1b;
+        font-weight: 700;
+        line-height: 8px;
+    }
+    a{
+        background: $mainColor;
+        color: #fff;
+        padding: 16px 50px;
+        border-radius: 24px;
+        border: solid 1px;
+        transition: 0.4s;
+    }
+    a:hover{
+        text-decoration: none;
+        background: #ffffff;
+        color: $mainColor;
+        padding: 16px 50px;
+        border-radius: 24px;
+        border: solid 1px $mainColor;
+        transition: 0.4s;
+    }
+}
